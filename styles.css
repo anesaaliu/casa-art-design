@@ -101,7 +101,6 @@ p:focus, h1:focus {
   padding: 15px 30px; 
   background-color: #b59862; 
   color: #fff; 
-  text-decoration: none; 
   border-radius: 5px; 
   font-size: 18px;
   margin-top: 20px; 
@@ -194,12 +193,13 @@ a {
 }
 
 a:hover {
-  color: #9a5343; /* Ngjyra kur lëviz mbi lidhjen (hover) */
+  color: #9a5343; 
 }
 
 .about-section {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   color: white;
   background-color: black;
   padding: 20px;
@@ -208,23 +208,27 @@ a:hover {
 .about-image img {
   width: 100%;
   height: auto;
-  margin-left: 100px;
+  margin-bottom: 20px;
   display: block;
 }
 .about-content p{
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .about-content {
-  width: 70%;
-  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
   position: relative;
   z-index: 1;
 }
 
 .about-content h1 {
-  font-size: 50px;
-  margin-bottom: 80px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .about-info {
@@ -234,20 +238,22 @@ a:hover {
 
 .about-info div {
   width: 45%;
+  margin-bottom: 20px;
 }
 
 .about-info h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 footer {
-  margin-top: 90px;
+  margin-top: 50px;
   font-size: 15px;
   text-align: left;
   position: relative;
   z-index: 1;
 }
+
 .footer{
   background-color: #000000; 
   color: white; 
@@ -259,8 +265,7 @@ footer {
 }
 .footer p {
   margin: 0; 
-  font-size: 20px; 
-  position: relative;
+  font-size: 17px; 
 }
 
 .divider {
@@ -274,13 +279,13 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .explore-item {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .slideshow-container {
     width: 100%; 
-    height: auto; 
+    height: auto;
   }
 
   .explore-img {
@@ -341,5 +346,67 @@ footer {
   100% {
       opacity: 1;
       transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column; 
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 30px;
+  }
+
+  .about-info h2 {
+    font-size: 18px;
+  }
+
+  .about-info p {
+    font-size: 14px;
+  }
+
+  .about-info div {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 10px;
+  }
+
+  .about-content h1 {
+    font-size: 24px;
+  }
+
+  .about-info h2 {
+    font-size: 16px;
+  }
+
+  .about-info p {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    padding: 100px 0; 
+  }
+
+  .intro p {
+    font-size: 18px; 
+    line-height: 2rem;
+  }
+
+  .explore-button {
+    font-size: 14px; 
   }
 }
