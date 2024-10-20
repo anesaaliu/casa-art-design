@@ -427,7 +427,7 @@ ul li a:hover i {
   .about-image img {
     margin-left: 0px;
     margin-top: 50px;
-    max-width: 80%; 
+    max-width: 100%; 
     height: auto; 
   }
 }
