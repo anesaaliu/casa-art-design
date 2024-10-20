@@ -109,6 +109,8 @@ p:focus, h1:focus {
 
 .explore-button:hover {
   background-color: #d1bf9d;
+  transform: scale(1.05); /* Animacion i lehtë në hover */
+  transition: all 0.3s ease-in-out;
 }
 .explore {
   margin-top: 2rem;
@@ -333,7 +335,13 @@ ul li a:hover i {
     width: 100%; 
     height: auto;
   }
+  .explore-item {
+    flex-direction: column;
+  }
 
+  .text-container {
+    padding: 1rem;
+  }
   .explore-img {
     width: 100%; 
     height: auto; 
