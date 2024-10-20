@@ -52,7 +52,7 @@ p:focus, h1:focus {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  padding: 300px 0; 
+  padding: 200px 0; 
   margin-bottom: 70px;
   margin-top: 70px;
 }
@@ -61,10 +61,10 @@ p:focus, h1:focus {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 50px; 
+  padding: 30px; 
   background-color: rgba(255, 244, 244, 0.29); 
   border-radius: 8px; 
-  max-width: 1500px;
+  max-width: 90%;
   margin: 0 auto;
 }
 .intro p {
@@ -205,11 +205,9 @@ a:hover {
   background-color: black;
   padding: 20px;
 }
-
 .about-image {
   flex: 1;
-  background-size: cover;
-  height: 100%;
+  height: auto;
 }
 
 .about-image img {
@@ -217,20 +215,12 @@ a:hover {
   max-width: 100%; 
   margin-bottom: 20px;
   display: block;
-  margin-top: 150px;
-  margin-left: 100px;
-  align-self: flex-start;
-}
-
-
-.about-content p{
-  font-size: 18px;
-  line-height: 1.5;
+  margin-top: 0; 
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 .about-content {
-  display: flex;
-  flex-direction: column;
   flex: 2;
   width: 100%;
   padding: 40px;
@@ -246,6 +236,7 @@ a:hover {
 .about-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; 
   margin-bottom: 30px;
 }
 
@@ -265,21 +256,16 @@ footer {
   position: relative;
   z-index: 1;
 }
-footer ul li {
-  margin: 0 10px; 
-}
-
-footer p {
-    margin: 5px 0; 
-    font-size: 14px!important;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
+footer ul {
   display: flex;
+  justify-content: left; 
   gap: 20px;
 }
+footer p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
 
 ul li a {
   text-decoration: none;
@@ -299,14 +285,14 @@ ul li {
   background-color: #000000; 
   color: white; 
   text-align: center; 
-  padding: 20px 0; 
+  padding: 20px; 
   position: relative; 
   width: 100%;
   margin-top: 0;
 }
 .footer p {
   margin: 0; 
-  font-size: 10px; 
+  font-size: 14px; 
 }
 ul li a i {
   transition: color 0.3s ease;
@@ -335,10 +321,7 @@ ul li a:hover i {
     width: 100%; 
     height: auto;
   }
-  .explore-item {
-    flex-direction: column;
-  }
-
+ 
   .text-container {
     padding: 1rem;
   }
@@ -388,9 +371,6 @@ ul li a:hover i {
     font-size: 36px;
   }
 
-  .about-content h1 {
-    font-size: 36px;
-  }
 }
 @keyframes fadeIn {
   0% {
@@ -402,44 +382,30 @@ ul li a:hover i {
       transform: translateY(0);
   }
 }
-@media only screen and (max-width: 768px) {
-  .about-section {
+@media (max-width: 768px) {
+  .about-info {
     flex-direction: column; 
-  }
-
-  .about-content {
-    padding: 20px;
-  }
-
-  .about-content h1 {
-    font-size: 30px;
-  }
-
-  .about-info h2 {
-    font-size: 18px;
-  }
-
-  .about-info p {
-    font-size: 14px;
   }
 
   .about-info div {
     width: 100%; 
     margin-bottom: 20px;
   }
-  .about-image {
-    background-size: cover;
-    background-position: center center; 
+
+  footer p {
+    font-size: 10px;
   }
 
-  .about-image img {
-    margin-left: 0px;
-    margin-top: 50px;
-    max-width: 100%; 
-    height: auto; 
+  .footer p {
+    font-size: 8px;
+  }
+
+  ul li a {
+    font-size: 20px;
   }
 }
 
+/* For very small screens */
 @media (max-width: 480px) {
   .about-content h1 {
     font-size: 24px;
@@ -452,64 +418,57 @@ ul li a:hover i {
   .about-info p {
     font-size: 12px;
   }
-  .about-image {
-    background-size: cover;
-    background-position: center center; 
-  }
-
-  .about-image img {
-    margin-left: 0px;
-    margin-top: 50px;
-    max-width: 100%; 
-    height: auto; 
-  }
-}
-@media only screen and (max-width: 768px) {
-  .intro {
-    padding: 100px 0; 
-  }
-
-  .intro p {
-    font-size: 18px; 
-    line-height: 2rem;
-  }
-
-  .explore-button {
-    font-size: 14px; 
-  }
-}
-@media (max-width: 768px) {
-  footer {
-      padding: 15px;
-  }
 
   footer p {
-      font-size: 10px;  /* Madhësia e fontit në pajisje më të vogla */
+    font-size: 12px;
   }
 
   .footer p {
-      font-size: 8px;  /* Madhësia e fontit për footer-in e dytë në pajisje më të vogla */
+    font-size: 10px;
   }
 
   ul li a {
-      font-size: 20px; 
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    padding: 150px 0;
+  }
+  
+  .intro .container {
+    padding: 20px; 
+    max-width: 100%; 
+  }
+
+  .intro p {
+    font-size: 22px; 
+    line-height: 2.4rem;
   }
 }
 
 @media (max-width: 480px) {
-  footer {
-      padding: 10px;
+  .intro {
+    padding: 150px 0; 
   }
 
-  footer p {
-      font-size: 8px;  /* Madhësia e fontit më e vogël për pajisje të vogla */
+  .intro .container {
+    padding: 15px;
   }
 
-  .footer p {
-      font-size: 8px;  /* Madhësia e fontit për footer-in e dytë më e vogël */
+  .intro p {
+    font-size: 18px; 
+    line-height: 2.5rem;
   }
+}
+@media (max-width: 768px) {
+    .explore h2 {
+        font-size: 28px; 
+    }
+}
 
-  ul li a {
-      font-size: 16px; 
-  }
+@media (max-width: 480px) {
+    .explore h2 {
+        font-size: 29px; 
+    }
 }
