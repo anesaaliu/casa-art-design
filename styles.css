@@ -444,6 +444,17 @@ ul li a:hover i {
   .about-info p {
     font-size: 12px;
   }
+  .about-image {
+    background-size: cover;
+    background-position: center center; 
+  }
+
+  .about-image img {
+    margin-left: 0px;
+    margin-top: 50px;
+    max-width: 100%; 
+    height: auto; 
+  }
 }
 @media only screen and (max-width: 768px) {
   .intro {
