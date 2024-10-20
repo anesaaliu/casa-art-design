@@ -71,7 +71,7 @@ p:focus, h1:focus {
   font-family: 'Montserrat', sans-serif;
   max-width: 1000px;
   margin: 0; 
-  font-size: 27px;
+  font-size: 25px;
   color: rgb(0, 0, 0);
   line-height: 3.2rem;
   }
@@ -208,16 +208,17 @@ a:hover {
 .about-image {
   flex: 1;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .about-image img {
   height: auto;
   max-width: 100%; 
-  margin-bottom: 20px;
+  margin: 0;
   display: block;
-  margin-top: 0; 
-  margin-left: auto;
-  margin-right: auto; 
 }
 
 .about-content {
@@ -388,7 +389,7 @@ ul li a:hover i {
   }
 
   .about-info div {
-    width: 100%; 
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -405,7 +406,6 @@ ul li a:hover i {
   }
 }
 
-/* For very small screens */
 @media (max-width: 480px) {
   .about-content h1 {
     font-size: 24px;
@@ -433,7 +433,7 @@ ul li a:hover i {
 }
 @media (max-width: 768px) {
   .intro {
-    padding: 150px 0;
+    padding: 150px 0; 
   }
   
   .intro .container {
@@ -442,8 +442,8 @@ ul li a:hover i {
   }
 
   .intro p {
-    font-size: 22px; 
-    line-height: 2.4rem;
+    font-size: 22px;
+    line-height: 2.4rem; 
   }
 }
 
@@ -453,7 +453,7 @@ ul li a:hover i {
   }
 
   .intro .container {
-    padding: 15px;
+    padding: 15px; 
   }
 
   .intro p {
@@ -471,4 +471,23 @@ ul li a:hover i {
     .explore h2 {
         font-size: 29px; 
     }
+}
+@media (max-width: 768px) {
+  .about-image {
+      padding: 15px;
+  }
+
+  .about-image img {
+      max-width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image {
+      padding: 10px; 
+  }
+
+  .about-image img {
+      max-width: 180%; 
+  }
 }
