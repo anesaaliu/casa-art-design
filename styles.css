@@ -188,29 +188,39 @@ p:focus, h1:focus {
 }
 
 a {
-  color: #c07564;
+  color: #faf6b3;
   text-decoration: none; 
 }
 
 a:hover {
-  color: #9a5343; 
+  color: #f9df4a; 
 }
 
 .about-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   color: white;
   background-color: black;
   padding: 20px;
 }
 
+.about-image {
+  flex: 1;
+  background-size: cover;
+  height: 100%;
+}
+
 .about-image img {
-  width: 100%;
   height: auto;
+  max-width: 100%; 
   margin-bottom: 20px;
   display: block;
+  margin-top: 150px;
+  margin-left: 100px;
+  align-self: flex-start;
 }
+
+
 .about-content p{
   font-size: 18px;
   line-height: 1.5;
@@ -219,8 +229,8 @@ a:hover {
 .about-content {
   display: flex;
   flex-direction: column;
+  flex: 2;
   width: 100%;
-  max-width: 1200px;
   padding: 40px;
   position: relative;
   z-index: 1;
@@ -234,11 +244,11 @@ a:hover {
 .about-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .about-info div {
-  width: 45%;
-  margin-bottom: 20px;
+  width: 30%;
 }
 
 .about-info h2 {
@@ -248,10 +258,39 @@ a:hover {
 
 footer {
   margin-top: 50px;
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
   position: relative;
   z-index: 1;
+}
+footer ul li {
+  margin: 0 10px; 
+}
+
+footer p {
+    margin: 5px 0; 
+    font-size: 14px!important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+ul li a:hover {
+  color: #f9df4a; 
+}
+
+ul li {
+  display: inline-block;
 }
 
 .footer{
@@ -265,9 +304,15 @@ footer {
 }
 .footer p {
   margin: 0; 
-  font-size: 17px; 
+  font-size: 10px; 
+}
+ul li a i {
+  transition: color 0.3s ease;
 }
 
+ul li a:hover i {
+  color: #FFD700;
+}
 .divider {
   border: none;
   height: 2px;
@@ -277,6 +322,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media only screen and (max-width: 768px) {
   .explore-item {
     flex-direction: column;
@@ -373,13 +419,20 @@ footer {
     width: 100%; 
     margin-bottom: 20px;
   }
+  .about-image {
+    background-size: cover;
+    background-position: center center; 
+  }
+
+  .about-image img {
+    margin-left: 0px;
+    margin-top: 50px;
+    max-width: 80%; 
+    height: auto; 
+  }
 }
 
 @media (max-width: 480px) {
-  .about-content {
-    padding: 10px;
-  }
-
   .about-content h1 {
     font-size: 24px;
   }
@@ -389,10 +442,6 @@ footer {
   }
 
   .about-info p {
-    font-size: 12px;
-  }
-
-  footer {
     font-size: 12px;
   }
 }
@@ -408,5 +457,40 @@ footer {
 
   .explore-button {
     font-size: 14px; 
+  }
+}
+@media (max-width: 768px) {
+  footer {
+      padding: 15px;
+  }
+
+  footer p {
+      font-size: 10px;  /* Madhësia e fontit në pajisje më të vogla */
+  }
+
+  .footer p {
+      font-size: 8px;  /* Madhësia e fontit për footer-in e dytë në pajisje më të vogla */
+  }
+
+  ul li a {
+      font-size: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+      padding: 10px;
+  }
+
+  footer p {
+      font-size: 8px;  /* Madhësia e fontit më e vogël për pajisje të vogla */
+  }
+
+  .footer p {
+      font-size: 8px;  /* Madhësia e fontit për footer-in e dytë më e vogël */
+  }
+
+  ul li a {
+      font-size: 16px; 
   }
 }
