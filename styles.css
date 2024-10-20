@@ -206,20 +206,6 @@ a:hover {
   background-color: black;
   padding: 20px;
 }
-.about-image {
-  flex: 1;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  height: auto;
-  max-width: 100%; 
-  margin: 0;
-  display: block;
-}
 
 .about-content {
   flex: 2;
@@ -472,24 +458,4 @@ ul li a:hover i {
         font-size: 29px; 
     }
 }
-@media (max-width: 768px) {
-  .about-image {
-      padding: 15px;
-  }
 
-  .about-image img {
-      max-width: 90%; 
-      width: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-image {
-      padding: 10px; 
-  }
-
-  .about-image img {
-      width: 100%;
-      height: auto; 
-  }
-}
