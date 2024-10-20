@@ -148,6 +148,7 @@ p:focus, h1:focus {
   font-size: 1.2rem;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
+  text-align: justify;
 }
 
 .slideshow-container {
@@ -211,7 +212,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .about-image img {
@@ -479,6 +479,7 @@ ul li a:hover i {
 
   .about-image img {
       max-width: 90%; 
+      width: auto;
   }
 }
 
@@ -488,6 +489,7 @@ ul li a:hover i {
   }
 
   .about-image img {
-      max-width: 180%; 
+      width: 100%;
+      height: auto; 
   }
 }
