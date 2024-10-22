@@ -336,6 +336,7 @@ ul li a:hover i {
   
   .slideshow-container {
     height: 450px;
+     margin-top: -50px;
   }
   .explore-img {
     height: 450px; 
