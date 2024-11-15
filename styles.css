@@ -48,7 +48,7 @@ p:focus, h1:focus {
 }
 
 .intro {
-  background-image: url('img/hea.jpeg');
+  background-image: url('img/pexel.jpg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -62,7 +62,7 @@ p:focus, h1:focus {
   align-items: center;
   text-align: center;
   padding: 30px; 
-  background-color: rgba(255, 244, 244, 0.29); 
+  background-color: rgba(70, 90, 72, 0.755); 
   border-radius: 8px; 
   max-width: 90%;
   margin: 0 auto;
@@ -72,7 +72,7 @@ p:focus, h1:focus {
   max-width: 1000px;
   margin: 0; 
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: rgb(230, 229, 229);
   line-height: 3.2rem;
   }
 
@@ -99,8 +99,8 @@ p:focus, h1:focus {
 .explore-button {
   display: inline-block; 
   padding: 15px 30px; 
-  background-color: #b59862; 
-  color: #fff; 
+  background-color: #202b22; 
+  color: #ffffff; 
   border-radius: 5px; 
   font-size: 18px;
   margin-top: 20px; 
@@ -108,8 +108,8 @@ p:focus, h1:focus {
 }
 
 .explore-button:hover {
-  background-color: #d1bf9d;
-  transform: scale(1.05); /* Animacion i lehtë në hover */
+  background-color: #405843c0;
+  transform: scale(1.05); 
   transition: all 0.3s ease-in-out;
 }
 .explore {
@@ -153,7 +153,7 @@ p:focus, h1:focus {
 
 .slideshow-container {
   position: relative;
-  width: 500px; 
+  width: 100%; 
   height: 700px; 
   flex: 1;
 }
@@ -196,7 +196,7 @@ a {
 }
 
 a:hover {
-  color: #f9df4a; 
+  color: #c1dfcb; 
 }
 
 .about-section {
@@ -205,6 +205,20 @@ a:hover {
   color: white;
   background-color: black;
   padding: 20px;
+}
+.about-image {
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  height: auto;
+  max-width: 100%; 
+  margin: 0;
+  display: block;
 }
 
 .about-content {
@@ -261,7 +275,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #f9df4a; 
+  color: #4af976; 
 }
 
 ul li {
@@ -286,7 +300,7 @@ ul li a i {
 }
 
 ul li a:hover i {
-  color: #FFD700;
+  color: #527a5e;
 }
 .divider {
   border: none;
@@ -333,15 +347,15 @@ ul li a:hover i {
 
 
 @media (max-width: 480px) {
-  
+
   .slideshow-container {
     height: 450px;
-     margin-top: -50px;
+    margin-top: -50px;
   }
   .explore-img {
     height: 450px; 
   }
-  
+
   header h1 {
     font-size: 1.5rem;
   }
@@ -467,4 +481,24 @@ ul li a:hover i {
         font-size: 29px; 
     }
 }
+@media (max-width: 768px) {
+  .about-image {
+      padding: 15px;
+  }
 
+  .about-image img {
+      max-width: 90%; 
+      width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image {
+      padding: 10px; 
+  }
+
+  .about-image img {
+      width: 100%;
+      height: auto; 
+  }
+}
