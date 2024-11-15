@@ -48,7 +48,7 @@ p:focus, h1:focus {
 }
 
 .intro {
-  background-image: url('img/pexel.jpg');
+  background-image: url('img/hea.jpeg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -62,7 +62,7 @@ p:focus, h1:focus {
   align-items: center;
   text-align: center;
   padding: 30px; 
-  background-color: rgba(70, 90, 72, 0.755); 
+  background-color: rgba(255, 244, 244, 0.29); 
   border-radius: 8px; 
   max-width: 90%;
   margin: 0 auto;
@@ -72,7 +72,7 @@ p:focus, h1:focus {
   max-width: 1000px;
   margin: 0; 
   font-size: 25px;
-  color: rgb(230, 229, 229);
+  color: rgb(0, 0, 0);
   line-height: 3.2rem;
   }
 
@@ -99,8 +99,8 @@ p:focus, h1:focus {
 .explore-button {
   display: inline-block; 
   padding: 15px 30px; 
-  background-color: #202b22; 
-  color: #ffffff; 
+  background-color: #b59862; 
+  color: #fff; 
   border-radius: 5px; 
   font-size: 18px;
   margin-top: 20px; 
@@ -108,8 +108,8 @@ p:focus, h1:focus {
 }
 
 .explore-button:hover {
-  background-color: #405843c0;
-  transform: scale(1.05); 
+  background-color: #d1bf9d;
+  transform: scale(1.05); /* Animacion i lehtë në hover */
   transition: all 0.3s ease-in-out;
 }
 .explore {
@@ -196,7 +196,7 @@ a {
 }
 
 a:hover {
-  color: #c1dfcb; 
+  color: #f9df4a; 
 }
 
 .about-section {
@@ -275,7 +275,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #4af976; 
+  color: #f9df4a; 
 }
 
 ul li {
@@ -300,7 +300,7 @@ ul li a i {
 }
 
 ul li a:hover i {
-  color: #527a5e;
+  color: #FFD700;
 }
 .divider {
   border: none;
